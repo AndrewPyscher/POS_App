@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs421hw1.MainController">
+    <children>
+        <ChoiceBox fx:id="cmbPackage" layoutX="21.0" layoutY="60.0" prefHeight="26.0" prefWidth="230.0" />
+        <Label layoutX="76.0" layoutY="34.0" prefHeight="18.0" prefWidth="110.0" text="Select Package Type" />
+        <TextField fx:id="txtAdults" layoutX="21.0" layoutY="126.0" prefHeight="26.0" prefWidth="98.0" text="0" visible="false" />
+        <Label fx:id="lblAdult" layoutX="21.0" layoutY="97.0" text="# of Adults Tickets" visible="false" />
+        <TextField fx:id="txtAdultsRaptor" layoutX="137.0" layoutY="126.0" prefHeight="26.0" prefWidth="98.0" text="0" visible="false" />
+        <TextField fx:id="txtChildren" layoutX="21.0" layoutY="205.0" prefHeight="26.0" prefWidth="98.0" text="0" visible="false" />
+        <Label fx:id="lblChild" layoutX="25.0" layoutY="174.0" text="# of Child Tickets" visible="false" />
+        <TextField fx:id="txtChildRaptor" layoutX="137.0" layoutY="205.0" prefHeight="26.0" prefWidth="98.0" text="0" visible="false" />
+        <TextField fx:id="txtDiscount" layoutX="21.0" layoutY="276.0" promptText="Enter as Percent (15%)" visible="false" />
+        <Label fx:id="lblDiscount" layoutX="22.0" layoutY="258.0" prefHeight="18.0" prefWidth="170.0" text="Discount Percent" visible="false" />
+        <GridPane layoutX="14.0" layoutY="327.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.80003662109375" minWidth="10.0" prefWidth="124.80003662109375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.199951171875" minWidth="10.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.199951171875" minWidth="10.0" prefWidth="75.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="25.599951171875" minHeight="10.0" prefHeight="16.79996337890625" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="44.00003662109375" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.400000000000006" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="81.599951171875" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="81.599951171875" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Package" underline="true" />
+                <Label text="Tyrannosaurs Terror" GridPane.rowIndex="1" />
+                <Label text="Stegosaurus Plates" GridPane.rowIndex="2" />
+                <Label text="Pterodactyl Droppings" GridPane.rowIndex="3" />
+                <Label text="Adult Ticket" underline="true" GridPane.columnIndex="1" />
+                <Label text="\$219.75" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="\$155.00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="\$53.00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Child Ticket" underline="true" GridPane.columnIndex="2" />
+                <Label text="\$195.50" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label text="\$120.25" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label text="\$26.50" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Label text="Rappin' with Raptors " GridPane.rowIndex="4" />
+                <Label text="\$80.00" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="\$55.00" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            </children>
+        </GridPane>
+        <Label fx:id="lblFirst" alignment="CENTER" layoutX="299.0" layoutY="34.0" prefHeight="18.0" prefWidth="91.0" text="First Name" />
+        <Label fx:id="lblMiddle" layoutX="411.0" layoutY="34.0" prefHeight="18.0" prefWidth="72.0" text="Middle Initial" />
+        <Label fx:id="lblLast" alignment="CENTER" layoutX="512.0" layoutY="34.0" prefHeight="18.0" prefWidth="83.0" text="Last Name" />
+        <Label layoutX="303.0" layoutY="100.0" prefHeight="18.0" prefWidth="83.0" text="Street Address" />
+        <Label fx:id="lblCity" alignment="CENTER" layoutX="399.0" layoutY="100.0" prefHeight="18.0" prefWidth="95.0" text="City" />
+        <Label fx:id="lblState" alignment="CENTER" layoutX="507.0" layoutY="100.0" prefHeight="18.0" prefWidth="91.0" text="State" />
+        <TextField fx:id="txtFirstName" layoutX="297.0" layoutY="60.0" prefHeight="26.0" prefWidth="95.0" />
+        <TextField fx:id="txtMiddle" layoutX="399.0" layoutY="60.0" prefHeight="26.0" prefWidth="95.0" />
+        <TextField fx:id="txtLastName" layoutX="506.0" layoutY="60.0" prefHeight="26.0" prefWidth="95.0" />
+        <TextField fx:id="txtStreet" layoutX="297.0" layoutY="126.0" prefHeight="26.0" prefWidth="95.0" />
+        <TextField fx:id="txtCity" layoutX="399.0" layoutY="126.0" prefHeight="26.0" prefWidth="95.0" />
+        <TextField fx:id="txtState" layoutX="506.0" layoutY="126.0" prefHeight="26.0" prefWidth="95.0" promptText="XX" />
+        <TextField fx:id="txtZip" layoutX="611.0" layoutY="126.0" prefHeight="26.0" prefWidth="95.0" />
+        <Label fx:id="lblZip" alignment="CENTER" contentDisplay="CENTER" layoutX="617.0" layoutY="100.0" prefHeight="18.0" prefWidth="83.0" text="Zip" textAlignment="CENTER" />
+        <Label fx:id="lblRaptor1" layoutX="128.0" layoutY="81.0" prefHeight="49.0" prefWidth="137.0" text="# of Adults Raptor Tickets" visible="false" wrapText="true" />
+        <Label fx:id="lblRaptor2" layoutX="131.0" layoutY="164.0" prefHeight="37.0" prefWidth="130.0" text="# of Child Raptor Tickets" visible="false" wrapText="true" />
+        <Label fx:id="lblPhone" layoutX="303.0" layoutY="168.0" prefHeight="18.0" prefWidth="83.0" text="Phone Number" />
+        <TextField fx:id="txtPhone" layoutX="297.0" layoutY="191.0" prefHeight="26.0" prefWidth="95.0" promptText="123-456-7890" />
+        <Label fx:id="lblCC" alignment="CENTER" layoutX="403.0" layoutY="168.0" prefHeight="18.0" prefWidth="189.0" text="Credit Card #" />
+        <TextField fx:id="txtCreditCard" layoutX="399.0" layoutY="191.0" prefHeight="26.0" prefWidth="198.0" promptText="1234 1234 1234 1234" />
+        <TextField fx:id="txtMMYY" layoutX="611.0" layoutY="191.0" prefHeight="26.0" prefWidth="95.0" promptText="12/34" />
+        <Label fx:id="lblMMYY" alignment="CENTER" layoutX="614.0" layoutY="168.0" prefHeight="18.0" prefWidth="95.0" text="MM/YY" />
+        <ListView fx:id="lstItems" layoutX="297.0" layoutY="240.0" prefHeight="209.0" prefWidth="400.0" />
+        <Button fx:id="btnSubmit" layoutX="298.0" layoutY="460.0" mnemonicParsing="false" onAction="#submitForm" prefHeight="26.0" prefWidth="400.0" text="Submit" />
+        <Label fx:id="lblError" layoutX="306.0" layoutY="6.0" prefHeight="17.0" prefWidth="143.0" text="Ensure All Inputs are Valid" textFill="RED" visible="false" />
+    </children>
+</AnchorPane>
